@@ -7,9 +7,20 @@ public class Item : ScriptableObject
 {
     public bool equipable;
     public static Player player;
-    public string itemName = "Item";
+    public new string name= "Item";
     public string itemDesc = "Desc";
     public Sprite itemImage;
+    public enum Slot
+    {
+        Item,
+        Head,
+        Torso,
+        Legs,
+        Weapon,
+        Shield
+    }
+
+    public Slot Type;
 
     public virtual void Use()
     {

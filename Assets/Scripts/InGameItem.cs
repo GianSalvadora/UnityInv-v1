@@ -14,6 +14,6 @@ public class InGameItem : MonoBehaviour
     public void OnIstantiate()
     {
         sr.sprite = baseItem.itemImage;
-        gameObject.name = baseItem.itemName + amount;
+        gameObject.name = baseItem.name + amount;
     }
 }

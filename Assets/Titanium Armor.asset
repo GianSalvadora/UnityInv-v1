@@ -17,5 +17,5 @@ MonoBehaviour:
   itemDesc: Peak armor strength; Only scatched by weapons that can tear the fabric
     of space and time itself.
   itemImage: {fileID: -7296337056529428220, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  Type: 1
   defense: 50
-  equipType: 0

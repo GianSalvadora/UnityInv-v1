@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84024ff40478bc94583d75156b0833f2, type: 3}
   m_Name: Card
   m_EditorClassIdentifier: 
+  equipable: 0
   itemName: Card
   itemDesc: A single card separated from its deck.
   itemImage: {fileID: 6734600491287510883, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  Type: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1caa55ae965a8b840824e47d7638d90e, type: 3}
-  m_Name: Iron Armor
+  m_Name: Sforkd
   m_EditorClassIdentifier: 
   equipable: 1
-  itemName: Iron Armor
-  itemDesc: Not the best, but at the same time it is not the worst.
-  itemImage: {fileID: 5608727682196630789, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
-  Type: 1
-  defense: 15
+  itemName: Sforkd
+  itemDesc: Stab a bit more then you deal THRICE the damage
+  itemImage: {fileID: -1299688068531442217, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  Type: 4
+  defense: 0

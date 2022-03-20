@@ -7,7 +7,7 @@ using TMPro;
 public class Inventory : MonoBehaviour
 {
     public InventorySlot slotCurrent;
-    [SerializeField]  TextMeshProUGUI Description;
+    [SerializeField] TextMeshProUGUI Description;
     [SerializeField] Text itemName;
     [SerializeField] Image itemImage;
     [SerializeField] GameObject toDisable;
@@ -20,19 +20,19 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        foreach(Transform child in childBearer)
+        foreach (Transform child in childBearer)
         {
             invList.Add(child.GetComponent<InventorySlot>());
         }
     }
 
-    void UpdateUI()
+    void UpdateUI(Item obj)
     {
-        if (slotCurrent != null)
+        if (obj != null)
         {
-            Description.text = slotCurrent.itemObj.itemDesc;
-            itemName.text = slotCurrent.itemObj.itemName;
-            itemImage.sprite = slotCurrent.itemObj.itemImage;
+            Description.text = obj.itemDesc;
+            itemName.text = obj.name;
+            itemImage.sprite = obj.itemImage;
             return;
         }
 
@@ -48,78 +48,29 @@ public class Inventory : MonoBehaviour
             toDisable.SetActive(!toDisable.activeSelf);
         }
     }
-    public void OnSlotClick(InventorySlot slotSelected, int type)
-    {
-        if (type == 1)
-        {
+    public void OnSlotClick(InventorySlot slotSelected)
+    { 
             if (slotSelected.itemObj != null)
             {
                 slotCurrent = slotSelected;
             }
-            else if(slotSelected.itemObj == null)
+            else if (slotSelected.itemObj == null)
             {
                 slotCurrent = null;
+                UpdateUI(null);
+                return; 
             }
-        }
-        else if(type == 2)
+        
+        UpdateUI(slotCurrent.itemObj);
+    }
+
+    public void OnSpecialSlotClick(SpecialSlot slot)
+    {
+        if(slot.equippedItem == null)
         {
-            if (slotCurrent == slotSelected)
-                return;
-
-            if(slotCurrent != null)
-            {
-                if(slotSelected.itemObj == slotCurrent.itemObj)
-                {
-                    int sC = slotCurrent.itemAmount;
-                    int sS = slotSelected.itemAmount;
-                    int total = sC + sS;
-                    if(total <= 64)
-                    {
-                        slotCurrent.itemObj = null;
-                        slotCurrent.itemAmount = 0;
-                        slotCurrent.UpdateSlot();
-                        slotCurrent = null;
-                        slotSelected.itemAmount += sC;
-                        slotSelected.UpdateSlot();
-                    }
-                    else if(total > 64)
-                    {
-                        slotCurrent.itemAmount = total - 64;
-                        slotSelected.itemAmount = 64;
-                        slotCurrent.UpdateSlot();
-                        slotSelected.UpdateSlot();
-                    }
-                }
-                else if(slotCurrent.itemObj != slotSelected.itemObj)
-                {
-                    if(slotSelected.itemObj == null)
-                    {
-                        slotSelected.itemObj = slotCurrent.itemObj;
-                        slotSelected.itemAmount = slotCurrent.itemAmount;
-                        slotSelected.UpdateSlot();
-                        slotCurrent.itemAmount = 0;
-                        slotCurrent.itemObj = null;
-                        slotCurrent.UpdateSlot();
-                        slotCurrent = slotSelected;
-                        return;
-                    }
-                    Item temp = slotCurrent.itemObj;
-                    int temp2 = slotCurrent.itemAmount;
-
-                    slotCurrent.itemObj = slotSelected.itemObj;
-                    slotCurrent.itemAmount = slotSelected.itemAmount;
-                    slotSelected.itemObj = temp;
-                    slotSelected.itemAmount = temp2;
-
-
-                    slotCurrent.UpdateSlot();
-                    slotSelected.UpdateSlot();
-
-                    slotCurrent = slotSelected;
-                }
-            }
+            return;
         }
-        UpdateUI();
+        UpdateUI(slot.equippedItem);
     }
 
     public void OnUseClick()
@@ -136,7 +87,7 @@ public class Inventory : MonoBehaviour
         if(slotCurrent.itemAmount <= 0)
         {
             slotCurrent = null;
-            UpdateUI();
+            UpdateUI(null);
         }
     }
 
@@ -150,7 +101,7 @@ public class Inventory : MonoBehaviour
 
         slotCurrent = null;
 
-        UpdateUI();
+        UpdateUI(null);
     }
 
     private void ThrowItem(Item itm, int amt)
@@ -160,6 +111,7 @@ public class Inventory : MonoBehaviour
         outp.amount = amt;
         outp.OnIstantiate();
     }
+
     public void OnItemRecieve(InGameItem received)//fix 4 equipables
     {
         if(received ==  null)

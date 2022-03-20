@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: Leather Armor
   itemDesc: Weakest armor, but it is better than nothing.
   itemImage: {fileID: 92988425954246417, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  Type: 1
   defense: 5
-  equipType: 0

@@ -28,14 +28,9 @@ public class Player : MonoBehaviour
         finalDamage = baseDamage;
     }
 
-    public void OnChangeArmor(int input, bool unequip)
+    public void ChangeStats(Item item)
     {
-        if (unequip)
-        {
-            finalDefense = baseDefense;
-            return;
-        }
-        finalDefense = baseDefense + input;
+        
     }
 
     private void Update()

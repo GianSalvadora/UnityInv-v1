@@ -11,7 +11,7 @@ public class SpecialSlot : MonoBehaviour, IDropHandler, IDragHandler, IPointerCl
     private Item prevItem=null;
     public Item.Slot Type;
     private static Inventory mainInv;
-    private Player player;
+    private static Player player;
 
     private void Update()
     {
@@ -27,6 +27,10 @@ public class SpecialSlot : MonoBehaviour, IDropHandler, IDragHandler, IPointerCl
         if (mainInv == null)
         {
             mainInv = FindObjectOfType<Inventory>();
+        }
+        if (player == null)
+        {
+            player = FindObjectOfType<Player>();
         }
     }
 

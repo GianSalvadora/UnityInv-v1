@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caa55ae965a8b840824e47d7638d90e, type: 3}
+  m_Name: Leather Armor
+  m_EditorClassIdentifier: 
+  equipable: 1
+  itemName: Leather Armor
+  itemDesc: Weakest armor, but it is better than nothing.
+  itemImage: {fileID: 92988425954246417, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  defense: 5
+  equipType: 0

@@ -17,8 +17,25 @@ public class SpecialSlot : MonoBehaviour, IDropHandler, IDragHandler, IPointerCl
     {
         if(prevItem != equippedItem)
         {
-            prevItem = equippedItem;
-            SetStats();
+            if (equippedItem != null)
+            {
+                if (prevItem != null)
+                {
+                    player.ChangeStats(-prevItem.GetData(), Type);
+                    player.ChangeStats(equippedItem.GetData(), Type);
+                    prevItem = equippedItem;
+                }
+                else if(prevItem == null)
+                {
+                    player.ChangeStats(equippedItem.GetData(), Type);
+                    prevItem = equippedItem;
+                }
+            }
+            else if(equippedItem == null)
+            {
+                player.ChangeStats(-prevItem.GetData(), Type);
+                prevItem = null;
+            }
         }
     }
 
@@ -92,11 +109,6 @@ public class SpecialSlot : MonoBehaviour, IDropHandler, IDragHandler, IPointerCl
             SetDisp(equippedItem.itemImage);
         }
         
-    }
-
-    private void SetStats()
-    {
-        player.ChangeStats(equippedItem);
     }
 
     public void OnDrag(PointerEventData eventData)

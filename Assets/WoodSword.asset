@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1caa55ae965a8b840824e47d7638d90e, type: 3}
-  m_Name: Sforkd
+  m_Script: {fileID: 11500000, guid: 0ece06df3c6ac3c4fbd4ed4d683691d8, type: 3}
+  m_Name: WoodSword
   m_EditorClassIdentifier: 
   equipable: 1
-  itemName: Sforkd
-  itemDesc: Stab a bit more then you deal THRICE the damage
-  itemImage: {fileID: -1299688068531442217, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
-  Type: 4
-  defense: 0
+  name: Item
+  itemDesc: Desc
+  itemImage: {fileID: 0}
+  Type: 0

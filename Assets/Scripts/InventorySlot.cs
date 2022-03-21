@@ -58,6 +58,8 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
             {
                 return;
             }
+
+
             if(itemObj != null && !itemObj.equipable)//if we have an item and it isnt equipable
             {
                 return;
@@ -74,6 +76,10 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
             }
             if (itemObj.equipable)//else if we are another equipable
             {
+                if (itemObj.Type != from.equippedItem.Type)
+                {
+                    return;
+                }
                 Item temp = itemObj;
                 itemObj = from.equippedItem;
                 itemAmount = 64;

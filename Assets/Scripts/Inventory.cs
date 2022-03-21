@@ -71,11 +71,17 @@ public class Inventory : MonoBehaviour
             return;
         }
         UpdateUI(slot.equippedItem);
+
+        slotCurrent = null;
     }
 
     public void OnUseClick()
     {
-        if (slotCurrent == null)
+        if (slotCurrent == null ||slotCurrent.itemObj == null)
+        {
+            return;
+        }
+        if (slotCurrent.itemObj.equipable)
         {
             return;
         }
@@ -93,7 +99,7 @@ public class Inventory : MonoBehaviour
 
     public void OnThrowClick()
     {
-        if (slotCurrent == null)
+        if (slotCurrent == null || slotCurrent.itemObj == null)
             return;
         ThrowItem(slotCurrent.itemObj, slotCurrent.itemAmount);
         slotCurrent.itemAmount = 0;

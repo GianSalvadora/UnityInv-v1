@@ -28,8 +28,16 @@ public class Player : MonoBehaviour
         finalDamage = baseDamage;
     }
 
-    public void ChangeStats(Item item)
+    public void ChangeStats(int stat, Item.Slot type)
     {
+        if(type ==Item.Slot.Weapon)
+        {
+            finalDamage += stat;
+        }
+        else if(type != Item.Slot.Weapon && type != Item.Slot.Item)
+        {
+            finalDefense += stat;
+        }
         
     }
 

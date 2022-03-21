@@ -21,4 +21,9 @@ public class Equipable : Item
         
 
     }
+
+    public override int GetData()
+    {
+        return defense;
+    }
 }

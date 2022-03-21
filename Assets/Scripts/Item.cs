@@ -26,8 +26,13 @@ public class Item : ScriptableObject
     {
         Debug.Log("Used " + name);
     }
-    public virtual void Unequip() 
+    public virtual void Unequip()
     {
-        
+
+    }
+
+    public virtual int GetData()
+    {
+        return 0;
     }
 }

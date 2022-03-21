@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 480814106}
-  itemObj: {fileID: 11400000, guid: a68dafef8d7c52e4582de5e0e95b0040, type: 2}
+  itemObj: {fileID: 11400000, guid: fac987e51ecb1e74eb41d2fffa713c54, type: 2}
   amountSlider: {fileID: 867664422}
   itemAmount: 64
 --- !u!114 &35276478
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 287870950}
-  itemObj: {fileID: 11400000, guid: fac987e51ecb1e74eb41d2fffa713c54, type: 2}
+  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
   amountSlider: {fileID: 1028411296}
   itemAmount: 9
 --- !u!114 &54419782
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 793988290}
-  itemObj: {fileID: 11400000, guid: 4f92b8446b4f10244a57ef506009ce7a, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 403798338}
   itemAmount: 64
 --- !u!114 &63878111
@@ -956,7 +956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1203833053}
-  itemObj: {fileID: 11400000, guid: 44a2b099d1023e442b719692a11faf3a, type: 2}
+  itemObj: {fileID: 11400000, guid: e81981f0e8763644babdf8c443214a4c, type: 2}
   amountSlider: {fileID: 1285897145}
   itemAmount: 64
 --- !u!114 &100722127
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1110535458}
-  itemObj: {fileID: 11400000, guid: 44a2b099d1023e442b719692a11faf3a, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 2131639860}
   itemAmount: 64
 --- !u!114 &302895769
@@ -3125,7 +3125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 2066084942}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 1148678029}
   itemAmount: 64
 --- !u!114 &471410752
@@ -3832,7 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 415029074}
-  itemObj: {fileID: 11400000, guid: c885aed6894c7804482367de9027c46b, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 145512700}
   itemAmount: 64
 --- !u!114 &566819031
@@ -4153,7 +4153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1868107983}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 11400000, guid: a68dafef8d7c52e4582de5e0e95b0040, type: 2}
   amountSlider: {fileID: 2120648756}
   itemAmount: 64
 --- !u!114 &625976157
@@ -4757,7 +4757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1027302952}
-  itemObj: {fileID: 11400000, guid: ea1ce42c344a7204fa835aa2df1b7d56, type: 2}
+  itemObj: {fileID: 11400000, guid: 44a2b099d1023e442b719692a11faf3a, type: 2}
   amountSlider: {fileID: 496042719}
   itemAmount: 64
 --- !u!114 &686472541
@@ -4907,7 +4907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 961493433}
-  itemObj: {fileID: 11400000, guid: c06ec8ec176986848b0246266c0fbf61, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 737047746}
   itemAmount: 32
 --- !u!114 &693890030
@@ -6053,7 +6053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1349241909}
-  itemObj: {fileID: 11400000, guid: 627f5ef0cd6f751429e6d5a27d5819b6, type: 2}
+  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
   amountSlider: {fileID: 349276042}
   itemAmount: 25
 --- !u!114 &1005765876
@@ -6515,7 +6515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 211501591}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 583989468}
   itemAmount: 64
 --- !u!114 &1032930490
@@ -7429,7 +7429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1025187689}
-  itemObj: {fileID: 11400000, guid: fac987e51ecb1e74eb41d2fffa713c54, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 1452036763}
   itemAmount: 55
 --- !u!114 &1226966142
@@ -8673,7 +8673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 591649928}
-  itemObj: {fileID: 11400000, guid: ea9f56dfd70d58a47ad3bc1efb72c00d, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 404912755}
   itemAmount: 64
 --- !u!114 &1483427993
@@ -9354,7 +9354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 91393113}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 11400000, guid: 627f5ef0cd6f751429e6d5a27d5819b6, type: 2}
   amountSlider: {fileID: 756429963}
   itemAmount: 64
 --- !u!114 &1601176846
@@ -9408,6 +9408,7 @@ GameObject:
   - component: {fileID: 1602429611}
   - component: {fileID: 1602429610}
   - component: {fileID: 1602429614}
+  - component: {fileID: 1602429615}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -9514,9 +9515,23 @@ MonoBehaviour:
   itemImage: {fileID: 1483946136}
   toDisable: {fileID: 1583172398}
   childBearer: {fileID: 361085129}
+  specialChildBearer: {fileID: 1861967212}
   output: {fileID: 1741186981}
   outputObj: {fileID: 1140310241739147778, guid: b841468f3dc15bc4a889e0f4d75af694, type: 3}
   invList: []
+  specialInvList: []
+--- !u!114 &1602429615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602429609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddcd2a2289869094ab5e532b44e6ef63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1607922366
 GameObject:
   m_ObjectHideFlags: 0
@@ -9666,7 +9681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 696559995}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 11400000, guid: c06ec8ec176986848b0246266c0fbf61, type: 2}
   amountSlider: {fileID: 1436268759}
   itemAmount: 64
 --- !u!114 &1643281870
@@ -10265,7 +10280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 554045137}
-  itemObj: {fileID: 11400000, guid: fb679bea73c0da842b717e7385c5a3e1, type: 2}
+  itemObj: {fileID: 0}
   amountSlider: {fileID: 1738451089}
   itemAmount: 64
 --- !u!114 &1757256618
@@ -11485,7 +11500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconSlot: {fileID: 1374736660}
-  itemObj: {fileID: 11400000, guid: ea9f56dfd70d58a47ad3bc1efb72c00d, type: 2}
+  itemObj: {fileID: 11400000, guid: 2420a8d7744efd848a6b7d02a8df3a0e, type: 2}
   amountSlider: {fileID: 627761654}
   itemAmount: 64
 --- !u!114 &1992342790

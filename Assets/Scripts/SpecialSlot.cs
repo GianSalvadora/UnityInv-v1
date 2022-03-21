@@ -13,6 +13,7 @@ public class SpecialSlot : MonoBehaviour, IDropHandler, IDragHandler, IPointerCl
     private static Inventory mainInv;
     private static Player player;
 
+
     private void Update()
     {
         if(prevItem != equippedItem)

@@ -12,11 +12,13 @@ public class Inventory : MonoBehaviour
     [SerializeField] Image itemImage;
     [SerializeField] GameObject toDisable;
     [SerializeField] Transform childBearer;
+    [SerializeField] Transform specialChildBearer;
 
     public Transform output;
     public GameObject outputObj;
 
     public List<InventorySlot> invList;
+    public List<SpecialSlot> specialInvList;
 
     private void Start()
     {
@@ -24,6 +26,22 @@ public class Inventory : MonoBehaviour
         {
             invList.Add(child.GetComponent<InventorySlot>());
         }
+        foreach(Transform child in specialChildBearer)
+        {
+            specialInvList.Add(child.GetComponent<SpecialSlot>());
+        }
+    }
+
+    public void LoadSlot(Item item, int amt, int indx)
+    {
+        invList[indx].itemAmount = amt;
+        invList[indx].itemObj = item;
+        invList[indx].UpdateSlot();
+    }
+    public void LoadSpecialSlot(Item item, int indx)
+    {
+        specialInvList[indx].equippedItem = item;
+        specialInvList[indx].UpateSlot();
     }
 
     void UpdateUI(Item obj)

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: WoodSword
   m_EditorClassIdentifier: 
   equipable: 1
-  name: Item
-  itemDesc: Desc
-  itemImage: {fileID: 0}
-  Type: 0
+  name: Wooden Sword
+  itemDesc: Glorified Stick
+  itemImage: {fileID: -5365385695610608141, guid: c01e0a46e3c568e4e833dc7e648caf6f, type: 3}
+  Type: 4
+  defense: 0
+  attack: 5
